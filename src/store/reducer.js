@@ -1,17 +1,35 @@
 import * as actionTypes from './actions';
+import * as toppingsCount from './toppingsCount';
+
 const initialState = {
     toppings: {
-        pepperoni: false,
-        capsicum: false,
-        olives: false,
-        chicken: false
+        pepperoni: {
+            type: "pepperoni",
+            count: toppingsCount.PEPPERONI_COUNT,
+            added: true
+        },
+        capsicum: {
+            type: "capsicum",
+            count: toppingsCount.CAPSICUM_COUNT,
+            added: true
+        },
+        olive: {
+            type: "olive",
+            count: toppingsCount.OLIVES_COUNT,
+            added: true
+        },
+        chicken: {
+            type: "chicken",
+            count: toppingsCount.CHICKEN_COUNT,
+            added: true
+        }
     },
     totalPrice: 100
 };
 const INGREDIENT_PRICES = {
     pepperoni: 70,
     capsicum: 40,
-    olives: 50,
+    olive: 50,
     chicken: 80
 };
 const reducer = (state = initialState,action) => {
@@ -21,7 +39,8 @@ const reducer = (state = initialState,action) => {
             ...state,
             toppings: {
                 ...state.toppings,
-                [action.toppingName]: true
+                ...state.toppings[action.toppingName],
+                added: true
             },
             totalPrice: state.totalPrice + INGREDIENT_PRICES[action.toppingName]
         }
@@ -30,7 +49,8 @@ const reducer = (state = initialState,action) => {
             ...state,
             toppings: {
                 ...state.toppings,
-                [action.toppingName]: false
+                ...state.toppings[action.toppingName],
+                added: false
             },
             totalPrice: state.totalPrice - INGREDIENT_PRICES[action.toppingName]
         }  

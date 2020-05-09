@@ -1,5 +1,5 @@
 .Pizza {
-    width: 100%;
+    width: 300px;
     margin:auto;
     height: 300px;
     text-align: center;
@@ -35,13 +35,11 @@
   border-radius:100%;
   background-color: #ffff00;
 }
-.salamiLayer{
+.pepperoniLayer{
   width:300px;
   height:300px;
-  position:absolute;
-  margin:202px 120px;
-  top:0px;
-  left:0px;
+  position:relative;
+  margin:auto;
   opacity:1;
   border-radius:100%;
   background-color:transparent;
@@ -49,15 +47,13 @@
 .chickenLayer{
   width:300px;
   height:300px;
-  position:absolute;
-  margin:202px 132px;
-  top:0px;
-  left:0px;
+  position:relative;
   opacity:1;
+  margin-top: -286px;
   border-radius:100%;
   background-color:transparent;
 }
-.salami {
+.pepperoni {
   width: 40px;
   height:40px;
   border-radius:100%;
@@ -80,13 +76,7 @@
   top:10px;
   left:105px;
 }
-
-.salami1{
-  position:absolute;
-  top:10px;
-  left:105px;
-}
-.salami1{
+.pepperoni1{
   position:absolute;
   top:50px;
   left:40px;
@@ -96,7 +86,7 @@
   top:125px;
   left:18px;
 }
-.salami2{
+.pepperoni2{
   position:absolute;
   top:198px;
   left:42px;
@@ -106,7 +96,7 @@
   top:240px;
   left:112px;
 }
-.salami3{
+.pepperoni3{
   position:absolute;
   top:215px;
   left:192px;
@@ -116,7 +106,7 @@
   top:160px;
   left:238px;
 }
-.salami4{
+.pepperoni4{
   position:absolute;
   top:80px;
   left:235px;
@@ -131,20 +121,20 @@
   top:100px;
   left:90px;
 }
-.salami5{
+.pepperoni5{
   position:absolute;
   top:100px;
   left:175px;
 }
-.salami6{
+.pepperoni6{
   position:absolute;
   top:165px;
   left:132px;
 }
 
 
-/* oliven */
-.oliven{
+/* olive */
+.olive{
   width:10px;
   height:10px;
   border:8px solid #080808;
@@ -157,30 +147,26 @@
   background-color: #20A14B;
 }
 .capsicumLayer {
-width:300px;
-  height:300px;
-  position:absolute;
-  margin:195px 118px;
-  top:0px;
-  left:0px;
-  opacity:1;
-  border-radius:100%;
-  background-color:transparent;
-}
-
-.olivenLayer{
   width:300px;
   height:300px;
-  position:absolute;
-  margin:195px 118px;
-  top:0px;
-  left:0px;
+  position:relative;
   opacity:1;
+  margin-top: -299px;
   border-radius:100%;
   background-color:transparent;
 }
 
-.oliven1{
+.oliveLayer{
+  width:300px;
+  height:300px;
+  position:relative;
+  opacity:1;
+  margin-top: -305px;
+  border-radius:100%;
+  background-color:transparent;
+}
+
+.olive1{
   position:absolute;
   top:23px;
   left:69px;
@@ -190,7 +176,7 @@ width:300px;
   top:93px;
   left:20px;
 }
-.oliven2{
+.olive2{
   position:absolute;
   top:183px;
   left:15px;
@@ -200,12 +186,12 @@ width:300px;
   top:253px;
   left:75px;
 }
-.oliven3{
+.olive3{
   position:absolute;
   top:260px;
   left:168px;
 }
-.oliven4{
+.olive4{
   position:absolute;
   top:213px;
   left:242px;
@@ -215,7 +201,7 @@ width:300px;
   top:133px;
   left:270px;
 }
-.oliven5{
+.olive5{
   position:absolute;
   top:53px;
   left:238px;
@@ -225,12 +211,12 @@ width:300px;
   top:13px;
   left:160px;
 }
-.oliven6{
+.olive6{
   position:absolute;
   top:73px;
   left:172px;
 }
-.oliven7{
+.olive7{
   position:absolute;
   top:73px;
   left:98px;
@@ -240,12 +226,12 @@ width:300px;
   top:139px;
   left:70px;
 }
-.oliven8{
+.olive8{
   position:absolute;
   top:195px;
   left:105px;
 }
-.oliven9{
+.olive9{
   position:absolute;
   top:198px;
   left:179px;
@@ -259,4 +245,8 @@ width:300px;
   position:absolute;
   top:135px;
   left:145px;
+}
+
+.hideLayer {
+  opacity: 0;
 }
