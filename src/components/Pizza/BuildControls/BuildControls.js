@@ -6,7 +6,7 @@ import BuildControl from './BuildControl/BuildControl';
 
 const buildControls = (props) => (
     <div className={classes.BuildControls}>
-        <p>Current Price: <strong>{props.price}</strong></p>
+        <div className={classes.priceDiv}>Bill Amount: <strong>{props.price}</strong></div>
         {Object.keys(props.toppings).map((ctrl, index) => (
             <BuildControl
                 key={`${props.toppings[ctrl].label}+${index}`}
@@ -17,6 +17,7 @@ const buildControls = (props) => (
                  />
                 
         ))}
+
     </div>
 )
 

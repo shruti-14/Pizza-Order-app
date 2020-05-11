@@ -23,7 +23,7 @@ const pizza = (props) => {
     return (
 
         <div className="Pizza">
-            <div className="teig">
+            <div className="crust">
                 {pizzaToppings}
             </div>
         </div>
