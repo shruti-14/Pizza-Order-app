@@ -1,22 +1,22 @@
 .BuildControls {
-    width: 100%;
-    background-color: antiquewhite;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: auto;
-    padding: 10px 0;
-    text-align: center;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 60px;
 }
 .priceDiv {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-  }
-  
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}

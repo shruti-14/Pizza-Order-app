@@ -1,252 +1,333 @@
 .Pizza {
-    width: 300px;
-    margin:auto;
-    height: 300px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
-@media (min-width: 500px) and (min-height: 400px) {
-    .Pizza {
-        width: 350px;
-        height: 300px;
-    }
+.base {
+  width: fit-content;
+  height: fit-content;
+  border: 20px solid #ffbf80;
+  border-radius: 100%;
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 0 0 0 1px #e78267;
 }
-
-@media (min-width: 500px) and (min-height: 401px) {
-    .Pizza {
-        width: 450px;
-        height: 400px;
-    }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-@media (min-width: 1000px) and (min-height: 700px) {
-    .Pizza {
-        width: 700px;
-        height: 350px;
-    }
+.crust {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 16px solid #cc2900;
+  border-radius: 100%;
+  background-image: radial-gradient(#ffeb99, #ffdb4d, #ffe680);
 }
-.crust{
-  width:300px;
-  height:300px;
-  margin:auto;
-  border:15px solid #ffa64d;
-  border-radius:100%;
-  background-color: #ffff00;
+.pepperoniLayer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  opacity: 1;
+  border-radius: 100%;
+  background-color: transparent;
 }
-.pepperoniLayer{
-  width:300px;
-  height:300px;
-  position:relative;
-  margin:auto;
-  opacity:1;
-  border-radius:100%;
-  background-color:transparent;
-}
-.chickenLayer{
-  width:300px;
-  height:300px;
-  position:relative;
-  opacity:1;
+.chickenLayer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 1;
   margin-top: -286px;
-  border-radius:100%;
-  background-color:transparent;
+  border-radius: 100%;
+  background-color: transparent;
+}
+.onionLayer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  opacity: 1;
+  border-radius: 100%;
+  background-color: transparent;
+  margin-top: -300px;
 }
 .pepperoni {
   width: 40px;
-  height:40px;
-  border-radius:100%;
-  border:0.5px solid #8c0000;
-  background-color:#b30000;
-  position:absolute;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #8c0000;
+  background-image: linear-gradient(to left, rgb(179, 0, 0), #800000);
+  position: absolute;
+}
+.onion {
+  width: 40px;
+  height: 55px;
+  border-radius: 80%;
+  border-right: 8px solid #ff80aa;
+  position: absolute;
+  opacity: 0.6;
 }
 .chicken {
   width: 25px;
-  height:30px;
-  border-radius:10%;
-  border:0.5px solid #A2401E;
-  background-color: #A2401E;
-  position:absolute;
+  height: 30px;
+  border-radius: 10%;
+  border: 0.5px solid #a2401e;
+  background-color: #a2401e;
+  position: absolute;
   transform: rotate(20deg);
 }
 
 .chicken1 {
-  position:absolute;
-  top:10px;
-  left:105px;
+  position: absolute;
+  top: 10px;
+  left: 105px;
 }
-.pepperoni1{
-  position:absolute;
-  top:50px;
-  left:40px;
+.onion1 {
+  position: absolute;
+  top: 133px;
+  left: 16px;
 }
-.chicken5{
-  position:absolute;
-  top:125px;
-  left:18px;
+.onion2 {
+  position: absolute;
+  top: 205px;
+  left: 118px;
 }
-.pepperoni2{
-  position:absolute;
-  top:198px;
-  left:42px;
+.onion3 {
+  position: absolute;
+  top: 108px;
+  left: 90px;
 }
-.chicken2{
-  position:absolute;
-  top:240px;
-  left:112px;
+.onion4 {
+  position: absolute;
+  top: 132px;
+  left: 246px;
 }
-.pepperoni3{
-  position:absolute;
-  top:215px;
-  left:192px;
+.onion5 {
+  position: absolute;
+  top: 12px;
+  left: 186px;
 }
-.chicken3{
-  position:absolute;
-  top:160px;
-  left:238px;
+.onion6 {
+  position: absolute;
+  top: 120px;
+  left: 144px;
 }
-.pepperoni4{
-  position:absolute;
-  top:80px;
-  left:235px;
+.onion7 {
+  position: absolute;
+  top: 32px;
+  left: 113px;
 }
-.chicken6{
-  position:absolute;
-  top:28px;
-  left:185px;
+.onion8 {
+  position: absolute;
+  top: 76px;
+  left: 40px;
 }
-.chicken4{
-  position:absolute;
-  top:100px;
-  left:90px;
+.pepperoni1 {
+  position: absolute;
+  top: 50px;
+  left: 40px;
 }
-.pepperoni5{
-  position:absolute;
-  top:100px;
-  left:175px;
+.chicken5 {
+  position: absolute;
+  top: 125px;
+  left: 18px;
 }
-.pepperoni6{
-  position:absolute;
-  top:165px;
-  left:132px;
+.pepperoni2 {
+  position: absolute;
+  top: 198px;
+  left: 42px;
 }
-
+.chicken2 {
+  position: absolute;
+  top: 240px;
+  left: 112px;
+}
+.pepperoni3 {
+  position: absolute;
+  top: 215px;
+  left: 192px;
+}
+.chicken3 {
+  position: absolute;
+  top: 160px;
+  left: 238px;
+}
+.pepperoni4 {
+  position: absolute;
+  top: 80px;
+  left: 235px;
+}
+.chicken6 {
+  position: absolute;
+  top: 28px;
+  left: 185px;
+}
+.chicken4 {
+  position: absolute;
+  top: 100px;
+  left: 90px;
+}
+.pepperoni5 {
+  position: absolute;
+  top: 100px;
+  left: 175px;
+}
+.pepperoni6 {
+  position: absolute;
+  top: 165px;
+  left: 132px;
+}
 
 /* olive */
-.olive{
-  width:10px;
-  height:10px;
-  border:8px solid #080808;
-  border-radius:100%;
+.olive {
+  width: 10px;
+  height: 10px;
+  border: 8px solid #080808;
+  border-radius: 100%;
 }
 .capsicum {
-  width: 10px;
-  height: 25px;
-  transform: rotate(20deg);
-  background-color: #20A14B;
+  width: 11px;
+  height: 38px;
+  border-radius: 72%;
+  border-left: 7px solid #20a14b;
+  transform: rotate(25deg);
+  background-color: transparent;
+  border-bottom: 4px solid #20a14b;
+  border-top: 4px solid #20a14b;
 }
 .capsicumLayer {
-  width:300px;
-  height:300px;
-  position:relative;
-  opacity:1;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 1;
   margin-top: -299px;
-  border-radius:100%;
-  background-color:transparent;
+  border-radius: 100%;
+  background-color: transparent;
 }
 
-.oliveLayer{
-  width:300px;
-  height:300px;
-  position:relative;
-  opacity:1;
+.oliveLayer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 1;
   margin-top: -305px;
-  border-radius:100%;
-  background-color:transparent;
+  border-radius: 100%;
+  background-color: transparent;
 }
 
-.olive1{
-  position:absolute;
-  top:23px;
-  left:69px;
+.olive1 {
+  position: absolute;
+  top: 23px;
+  left: 69px;
 }
-.capsicum1{
-  position:absolute;
-  top:93px;
-  left:20px;
+.capsicum1 {
+  position: absolute;
+  top: 83px;
+  left: 20px;
 }
-.olive2{
-  position:absolute;
-  top:183px;
-  left:15px;
+.olive2 {
+  position: absolute;
+  top: 183px;
+  left: 15px;
 }
-.capsicum2{
-  position:absolute;
-  top:253px;
-  left:75px;
+.capsicum2 {
+  position: absolute;
+  top: 228px;
+  left: 82px;
 }
-.olive3{
-  position:absolute;
-  top:260px;
-  left:168px;
+.olive3 {
+  position: absolute;
+  top: 260px;
+  left: 168px;
 }
-.olive4{
-  position:absolute;
-  top:213px;
-  left:242px;
+.olive4 {
+  position: absolute;
+  top: 213px;
+  left: 242px;
 }
-.capsicum3{
-  position:absolute;
-  top:133px;
-  left:270px;
+.capsicum3 {
+  position: absolute;
+  top: 98px;
+  left: 272px;
 }
-.olive5{
-  position:absolute;
-  top:53px;
-  left:238px;
+.olive5 {
+  position: absolute;
+  top: 53px;
+  left: 238px;
 }
-.capsicum4{
-  position:absolute;
-  top:13px;
-  left:160px;
+.capsicum4 {
+  position: absolute;
+  top: 0px;
+  left: 160px;
 }
-.olive6{
-  position:absolute;
-  top:73px;
-  left:172px;
+.olive6 {
+  position: absolute;
+  top: 73px;
+  left: 172px;
 }
-.olive7{
-  position:absolute;
-  top:73px;
-  left:98px;
+.olive7 {
+  position: absolute;
+  top: 73px;
+  left: 98px;
 }
-.capsicum5{
-  position:absolute;
-  top:139px;
-  left:70px;
+.capsicum5 {
+  position: absolute;
+  top: 139px;
+  left: 70px;
 }
-.olive8{
-  position:absolute;
-  top:195px;
-  left:105px;
+.olive8 {
+  position: absolute;
+  top: 195px;
+  left: 105px;
 }
-.olive9{
-  position:absolute;
-  top:198px;
-  left:179px;
+.olive9 {
+  position: absolute;
+  top: 198px;
+  left: 179px;
 }
-.capsicum6{
-  position:absolute;
-  top:140px;
-  left:215px;
+.capsicum6 {
+  position: absolute;
+  top: 140px;
+  left: 215px;
 }
-.capsicum7{
-  position:absolute;
-  top:135px;
-  left:145px;
+.capsicum7 {
+  position: absolute;
+  top: 90px;
+  left: 145px;
 }
 
 .hideLayer {
   opacity: 0;
+}
+.fries {
+  height: 200px;
+}
+.coolDrink {
+  height: 220px;
+}
+.sweetDishOption {
+  display: flex;
+  align-items: center;
+}
+.cupcake {
+  height: 180px;
+}
+.plusContainer {
+  margin: 0px 32px 0px 32px;
+}
+.addIcon {
+  height: 75px;
+  width: 75px;
 }
