@@ -1,5 +1,6 @@
 .Pizza {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   text-align: center;
@@ -7,6 +8,7 @@
   font-size: 1.2rem;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 50px;
 }
 .base {
   width: fit-content;
@@ -17,7 +19,7 @@
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  box-shadow: 0 0 0 1px #e78267;
+  box-shadow: 0px 0px 4px 3px #e78267;
 }
 @keyframes spin {
   from {
@@ -85,6 +87,7 @@
   border-radius: 10%;
   border: 0.5px solid #a2401e;
   background-color: #a2401e;
+  background-image: linear-gradient(to right, #a2401e, #e38768);
   position: absolute;
   transform: rotate(20deg);
 }
@@ -311,21 +314,27 @@
 .hideLayer {
   opacity: 0;
 }
+.mealOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .fries {
-  height: 200px;
+  height: 180px;
+  margin-top: 29px;
+}
+.drinkContainer {
+  margin: 0px 42px;
 }
 .coolDrink {
   height: 220px;
 }
-.sweetDishOption {
-  display: flex;
-  align-items: center;
-}
 .cupcake {
-  height: 180px;
+  height: 160px;
+  margin-top: 60px;
 }
 .plusContainer {
-  margin: 0px 32px 0px 32px;
+  margin: 32px 0px;
 }
 .addIcon {
   height: 75px;

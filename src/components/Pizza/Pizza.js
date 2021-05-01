@@ -55,15 +55,6 @@ const pizza = (props) => {
             src={process.env.PUBLIC_URL + "/coke.jpeg"}
           />
         </div>
-      </div>
-      <div className="plusContainer">
-        <img
-          alt="add"
-          className="addIcon"
-          src={process.env.PUBLIC_URL + "/plus.png"}
-        />
-      </div>
-      <div className="sweetDishOption">
         <div className="cupCakeConatiner">
           <img
             alt="cupcake"

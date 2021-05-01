@@ -1,6 +1,6 @@
 import Aux from "../aux/aux";
 import React, { Component } from "react";
-import classes from "./layout.module.css";
+import "./layout.module.css";
 
 class Layout extends Component {
   render() {
